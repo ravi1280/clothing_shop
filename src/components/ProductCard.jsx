@@ -1,15 +1,17 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
-    const { name, price, image, category } = product;
+    const { id, name, price, image, category } = product;
     const { addToCart } = useCart();
 
     return (
         <div className="product-card">
             <div className="product-image-container">
-                <img src={image} alt={name} className="product-image" />
+                <Link to={`/product/${id}`}>
+                    <img src={image} alt={name} className="product-image" />
+                </Link>
                 <button
                     className="quick-add-btn"
                     onClick={(e) => {
@@ -23,7 +25,9 @@ const ProductCard = ({ product }) => {
             </div>
             <div className="product-info">
                 <p className="product-category">{category}</p>
-                <h3 className="product-name">{name}</h3>
+                <Link to={`/product/${id}`} className="product-name-link">
+                    <h3 className="product-name">{name}</h3>
+                </Link>
                 <p className="product-price">${price.toFixed(2)}</p>
             </div>
         </div>
