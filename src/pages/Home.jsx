@@ -3,37 +3,10 @@ import ProductCard from '../components/ProductCard';
 import '../styles/global.css';
 import './Home.css';
 
+import { products } from '../data/products';
+
 const Home = () => {
-    const featuredProducts = [
-        {
-            id: 1,
-            name: 'Classic Silk Blouse',
-            price: 120.00,
-            category: 'Tops',
-            image: 'https://images.unsplash.com/photo-1551163943-3f6a29e39426?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        },
-        {
-            id: 2,
-            name: 'Tailored Linen Trousers',
-            price: 180.00,
-            category: 'Bottoms',
-            image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        },
-        {
-            id: 3,
-            name: 'Cashmere Wool Coat',
-            price: 450.00,
-            category: 'Outerwear',
-            image: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        },
-        {
-            id: 4,
-            name: 'Leather Crossbody Bag',
-            price: 250.00,
-            category: 'Accessories',
-            image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        },
-    ];
+    const featuredProducts = products.slice(0, 4);
 
     return (
         <div className="home">
