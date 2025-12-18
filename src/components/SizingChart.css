@@ -1,0 +1,111 @@
+.sizing-chart {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+}
+
+.sizing-chart h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.sizing-note {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.size-cell {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.sizing-tips {
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8e8e8;
+}
+
+.sizing-tips h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.sizing-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sizing-tips li {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.sizing-tips strong {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .sizing-chart {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+    }
+}
