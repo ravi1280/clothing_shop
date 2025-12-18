@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import '../styles/global.css';
 import './Navbar.css';
@@ -8,6 +8,8 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { getCartCount } = useCart();
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,7 +22,7 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar ${isScrolled || !isHomePage ? 'scrolled' : ''}`}>
             <div className="container navbar-container">
                 <Link to="/" className="navbar-logo">
                     LUXE
