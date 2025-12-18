@@ -5,12 +5,6 @@ export const products = [
         price: 120.00,
         category: 'Tops',
         image: 'https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800',
-        images: [
-            'https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=800'
-        ]
     },
     {
         id: 2,
@@ -18,12 +12,6 @@ export const products = [
         price: 180.00,
         category: 'Bottoms',
         image: 'https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800',
-        images: [
-            'https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/7679447/pexels-photo-7679447.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/5710082/pexels-photo-5710082.jpeg?auto=compress&cs=tinysrgb&w=800'
-        ]
     },
     {
         id: 3,
@@ -31,12 +19,6 @@ export const products = [
         price: 450.00,
         category: 'Outerwear',
         image: 'https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=800',
-        images: [
-            'https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/7679475/pexels-photo-7679475.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/5710186/pexels-photo-5710186.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/6311612/pexels-photo-6311612.jpeg?auto=compress&cs=tinysrgb&w=800'
-        ]
     },
     {
         id: 4,
@@ -44,12 +26,6 @@ export const products = [
         price: 250.00,
         category: 'Accessories',
         image: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=800',
-        images: [
-            'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/2081199/pexels-photo-2081199.jpeg?auto=compress&cs=tinysrgb&w=800',
-            'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
-            'https://images.pexels.com/photos/2081200/pexels-photo-2081200.jpeg?auto=compress&cs=tinysrgb&w=800'
-        ]
     },
     {
         id: 5,
